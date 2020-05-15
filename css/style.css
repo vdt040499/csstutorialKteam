@@ -58,6 +58,7 @@ header {
     font-size: 62px;
     font-weight: 400;
     letter-spacing: 15px;
+    animation: moveInLeft 2s;
 }
 
 .heading-primary-sub {
@@ -65,6 +66,7 @@ header {
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 18px;
+    animation: moveInRight 2s;
 }
 
 .btn, 
@@ -89,7 +91,7 @@ header {
     box-shadow: 0 5px 20px rgba(219, 35, 35, 0.2);
 }
 
-.btn-active {
+.btn:active {
     outline: none;
     transform: translateY(-1px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); 
@@ -115,4 +117,57 @@ header {
 .btn:hover::after {
     transform: scaleX(1.4) scaleY(1.6);
     opacity: 0;
+}
+
+.btn-animated{
+    animation: moveInBottom 2s 0.75s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    80% {
+        transform: translateX(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    80% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
