@@ -14,7 +14,7 @@ dark blue: #1c3eff
 }
 
 html {
-    font-size: 42.5%;
+    font-size: 62.5%;
 }
 
 body {
@@ -23,7 +23,7 @@ body {
     font-size: 1.6rem;
     line-height: 1.7;
     color: #777777;
-    padding: 30px;
+    padding: 3rem;
     box-sizing: border-box;
 }
 
@@ -32,7 +32,7 @@ header {
     background-size: cover;
     background-position: top;
     position: relative;
-    height: 500px;
+    height: 95vh;
     clip-path: ellipse(72% 61% at 50% 31%);
 }
 
@@ -45,26 +45,26 @@ header {
 }
 
 .logo {
-    height: 70px;
+    height: 7rem;
 }
 
 .logo-box {
     position: absolute;
-    top: 30px;
-    left: 30px;
+    top: 3rem;
+    left: 3rem;
 }
 
 .heading-primary {
     color: #fff;
     text-transform: uppercase;
-    margin-bottom: 60px;
+    margin-bottom: 6rem;
 }
 
 .heading-primary-main {
     display: block;
     font-size: 6.2rem;
     font-weight: 400;
-    letter-spacing: 15px;
+    letter-spacing: 1.5rem;
     animation: moveInLeft 2s;
 }
 
@@ -72,7 +72,7 @@ header {
     display: block;
     font-size: 2rem;
     font-weight: 700;
-    letter-spacing: 18px;
+    letter-spacing: 1.8rem;
     animation: moveInRight 2s;
 }
 
@@ -82,8 +82,8 @@ header {
     display: inline-block;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 15px 40px;
-    border-radius: 100px;
+    padding: 1.5rem 4rem;
+    border-radius: 10rem;
     font-size: 1.6rem;
     position: relative;
 }
@@ -95,13 +95,13 @@ header {
 
 .btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 5px 20px rgba(219, 35, 35, 0.2);
+    box-shadow: 0 .5rem 2rem rgba(219, 35, 35, 0.2);
 }
 
 .btn:active {
     outline: none;
     transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2); 
 }
 
 .btn::after {
@@ -113,7 +113,7 @@ header {
     top: 0;
     left: 0;
     z-index: -1;
-    border-radius: 100px;
+    border-radius: 10rem;
     transition: all .8s;
 }
 
